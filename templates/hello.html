@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>Вы успешно авторизованы!</h1>
+    <p>Привет, {{ username }}</p>
+    <a href="{{ url_for('logout_func') }}">
+        <button class="btn btn-primary" type="submit">выйти</button>
+    </a>
+{% endblock %}
